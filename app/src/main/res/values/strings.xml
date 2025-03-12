@@ -1,0 +1,481 @@
+<!--
+  ~ /**
+  ~  *  on 20/05/23, 3:30 AM
+  ~  * Copyright (c) 2023 . All rights reserved.
+  ~  * Last modified 15/05/23, 6:12 AM
+  ~  */
+  -->
+
+<resources>
+
+    <string name="menu_conf" translatable="false">Conferencing</string>
+    <string name="menu_calllogs" translatable="false">Call Logs</string>
+    <string name="menu_settings" translatable="false">Settings</string>
+
+    <string name="FACEBOOK_APP_ID" translatable="false">743410166003105</string>
+    <string name="default_notification_channel_id" translatable="false">Channel ID</string>
+    <string name="app_name">Qamp</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Feeds</string>
+    <string name="title_dashboard">Chats</string>
+    <string name="title_notifications">Discover</string>
+    <string name="title_activity_sample_tabbed">SampleTabbedActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_message_fragment">Hello Message fragment</string>
+    <string name="title_activity_messaging">MessagingActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hello_world" translatable="false">Hello Square World!</string>
+    <string name="title_activity_image_editor">ImageEditor</string>
+
+    <string name="received_message">Received Message</string>
+
+    <!--    Error messages    -->
+    <string name="general_error">There is some error while processing your request. Please try after sometime.</string>
+    <string name="internet_error">Network error occured.</string>
+    <string name="incorrect_otp">You entered incorrect OTP.</string>
+    <string name="no_number">No phone numbers found</string>
+    <string name="not_image">Not an image or corrupt image</string>
+
+
+    <string name="title_h2_mo">LOGIN</string>
+    <string name="please_sign">Please sign in to continue</string>
+    <string name="field_text">Enter contact number</string>
+    <string name="button_samp">SIGN IN</string>
+    <string name="title_otp_screen">Verification Code</string>
+    <string name="please_enter_otp_subtitle">Please enter the OTP sent to</string>
+    <string name="otp_done_button">CONTINUE</string>
+    <string name="resend_otp_button">Resend OTP</string>
+    <string name="no_phone_text">Don\'t have the phone with you?</string>
+    <string name="continue_email_button">Continue with email</string>
+    <string name="onboarding_chat_heading">Chats</string>
+    <string name="onboarding_feed_heading">Feeds</string>
+    <string name="onboarding_discover_heading">Discover</string>
+    <string name="onboarding_sub_text1">Discover a all new way of chatting. Do more than just chat</string>
+    <string name="onboarding_sub_text2">See only what you follow without any distraction. \nEngage directly with people &amp; communities of your interest</string>
+    <string name="onboarding_sub_text3">Discover local businesses &amp; communities or create your presence to connect with people around you</string>
+    <string name="onboarding_profile_title">How do you want us to remember you?</string>
+    <string name="onboarding_profile_subtitle">We would like to know your name to start</string>
+    <string name="onboarding_profile_field_hint">Enter Name</string>
+    <string name="onboarding_profile_save_button">Save</string>
+    <string name="onboarding_profile_camera_text">Select your profile picture</string>
+    <string name="bottomsheet_field_text">Search button by name...</string>
+
+    <string name="onboarding_completion_text">Welcome
+        onboard</string>
+    <string name="profile">Profile</string>
+    <string name="profile_bottom_sheet_title">Image Option</string>
+
+    <!--     Phone Country Codes-->
+
+    <string-array name="DialingCountryCode">
+        <item>32,BE</item>
+        <item>501,BZ</item>
+        <item>229,BJ</item>
+        <item>975,BT</item>
+        <item>591,BO</item>
+        <item>387,BA</item>
+        <item>267,BW</item>
+        <item>55,BR</item>
+        <item>673,BN</item>
+        <item>359,BG</item>
+        <item>226,BF</item>
+        <item>95,MM</item>
+        <item>257,BI</item>
+        <item>855,KH</item>
+        <item>237,CM</item>
+        <item>1,CA</item>
+        <item>238,CV</item>
+        <item>236,CF</item>
+        <item>235,TD</item>
+        <item>56,CL</item>
+        <item>86,CN</item>
+        <item>61,CX</item>
+        <item>61,CC</item>
+        <item>57,CO</item>
+        <item>269,KM</item>
+        <item>242,CG</item>
+        <item>243,CD</item>
+        <item>682,CK</item>
+        <item>506,CR</item>
+        <item>385,HR</item>
+        <item>53,CU</item>
+        <item>357,CY</item>
+        <item>93,AF</item>
+        <item>355,AL</item>
+        <item>213,DZ</item>
+        <item>376,AD</item>
+        <item>244,AO</item>
+        <item>672,AQ</item>
+        <item>54,AR</item>
+        <item>374,AM</item>
+        <item>297,AW</item>
+        <item>61,AU</item>
+        <item>43,AT</item>
+        <item>994,AZ</item>
+        <item>973,BH</item>
+        <item>880,BD</item>
+        <item>375,BY</item>
+        <item>420,CZ</item>
+        <item>45,DK</item>
+        <item>253,DJ</item>
+        <item>670,TL</item>
+        <item>593,EC</item>
+        <item>20,EG</item>
+        <item>503,SV</item>
+        <item>240,GQ</item>
+        <item>358,FI</item>
+        <item>33,FR</item>
+        <item>291,ER</item>
+        <item>372,EE</item>
+        <item>251,ET</item>
+        <item>500,FK</item>
+        <item>298,FO</item>
+        <item>679,FJ</item>
+        <item>689,PF</item>
+        <item>241,GA</item>
+        <item>220,GM</item>
+        <item>995,GE</item>
+        <item>49,DE</item>
+        <item>233,GH</item>
+        <item>350,GI</item>
+        <item>30,GR</item>
+        <item>299,GL</item>
+        <item>502,GT</item>
+        <item>224,GN</item>
+        <item>245,GW</item>
+        <item>592,GY</item>
+        <item>509,HT</item>
+        <item>504,HN</item>
+        <item>852,HK</item>
+        <item>36,HU</item>
+        <item>91,IN</item>
+        <item>62,ID</item>
+        <item>98,IR</item>
+        <item>964,IQ</item>
+        <item>353,IE</item>
+        <item>44,IM</item>
+        <item>972,IL</item>
+        <item>39,IT</item>
+        <item>225,CI</item>
+        <item>81,JP</item>
+        <item>962,JO</item>
+        <item>7,KZ</item>
+        <item>254,KE</item>
+        <item>686,KI</item>
+        <item>965,KW</item>
+        <item>996,KG</item>
+        <item>856,LA</item>
+        <item>371,LV</item>
+        <item>961,LB</item>
+        <item>266,LS</item>
+        <item>231,LR</item>
+        <item>218,LY</item>
+        <item>423,LI</item>
+        <item>370,LT</item>
+        <item>352,LU</item>
+        <item>853,MO</item>
+        <item>389,MK</item>
+        <item>261,MG</item>
+        <item>265,MW</item>
+        <item>60,MY</item>
+        <item>960,MV</item>
+        <item>223,ML</item>
+        <item>356,MT</item>
+        <item>692,MH</item>
+        <item>222,MR</item>
+        <item>230,MU</item>
+        <item>262,YT</item>
+        <item>52,MX</item>
+        <item>691,FM</item>
+        <item>373,MD</item>
+        <item>377,MC</item>
+        <item>976,MN</item>
+        <item>382,ME</item>
+        <item>212,MA</item>
+        <item>258,MZ</item>
+        <item>264,NA</item>
+        <item>674,NR</item>
+        <item>977,NP</item>
+        <item>31,NL</item>
+        <item>599,AN</item>
+        <item>687,NC</item>
+        <item>64,NZ</item>
+        <item>505,NI</item>
+        <item>227,NE</item>
+        <item>234,NG</item>
+        <item>683,NU</item>
+        <item>850,KP</item>
+        <item>47,NO</item>
+        <item>968,OM</item>
+        <item>92,PK</item>
+        <item>680,PW</item>
+        <item>507,PA</item>
+        <item>675,PG</item>
+        <item>595,PY</item>
+        <item>51,PE</item>
+        <item>63,PH</item>
+        <item>870,PN</item>
+        <item>48,PL</item>
+        <item>351,PT</item>
+        <item>1,PR</item>
+        <item>974,QA</item>
+        <item>40,RO</item>
+        <item>7,RU</item>
+        <item>250,RW</item>
+        <item>590,BL</item>
+        <item>685,WS</item>
+        <item>378,SM</item>
+        <item>239,ST</item>
+        <item>966,SA</item>
+        <item>221,SN</item>
+        <item>381,RS</item>
+        <item>248,SC</item>
+        <item>232,SL</item>
+        <item>65,SG</item>
+        <item>421,SK</item>
+        <item>386,SI</item>
+        <item>677,SB</item>
+        <item>252,SO</item>
+        <item>27,ZA</item>
+        <item>82,KR</item>
+        <item>34,ES</item>
+        <item>94,LK</item>
+        <item>290,SH</item>
+        <item>508,PM</item>
+        <item>249,SD</item>
+        <item>597,SR</item>
+        <item>268,SZ</item>
+        <item>46,SE</item>
+        <item>41,CH</item>
+        <item>963,SY</item>
+        <item>886,TW</item>
+        <item>992,TJ</item>
+        <item>255,TZ</item>
+        <item>66,TH</item>
+        <item>228,TG</item>
+        <item>690,TK</item>
+        <item>676,TO</item>
+        <item>216,TN</item>
+        <item>90,TR</item>
+        <item>993,TM</item>
+        <item>688,TV</item>
+        <item>971,AE</item>
+        <item>256,UG</item>
+        <item>44,GB</item>
+        <item>380,UA</item>
+        <item>598,UY</item>
+        <item>1,US</item>
+        <item>998,UZ</item>
+        <item>678,VU</item>
+        <item>39,VA</item>
+        <item>58,VE</item>
+        <item>84,VN</item>
+        <item>681,WF</item>
+        <item>967,YE</item>
+        <item>260,ZM</item>
+        <item>263,ZW</item>
+    </string-array>
+
+    <string name="success_profile">Profile Saved</string>
+    <string name="otpnotrecieved">Did not received the OTP?</string>
+    <string name="contact_list">Contact List</string>
+    <string name="contacts_numver_max">200 Contacts</string>
+    <string name="searching">Searching...</string>
+    <string name="not_have_qamp_contact">You do not have contacts to show instead add contacts from new contacts list</string>
+    <string name="my_contacts">MY CONTACTS</string>
+    <string name="my_contacts_on_qamp">Contacts on Qamp</string>
+    <string name="save">Save</string>
+    <string name="examlpe_number">+91-9999999999</string>
+    <string name="username">TestName</string>
+    <string name="view_profile">View Profile</string>
+    <string name="notifications">Notifications</string>
+    <string name="new_notifications_indicator">Check New Notifications</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="Update_info_text">Update your info to keep your account secure</string>
+    <string name="Invite_text">Invite and Explore Qamp with your friends</string>
+    <string name="logout_text">Logout</string>
+    <string name="testUserSample">testUserSample</string>
+    <string name="user_status">This is user status</string>
+    <string name="about_text">About</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="save_text">Save</string>
+    <string name="max_content_text">100</string>
+    <string name="contact_number">Contact number</string>
+    <string name="save_verify_text"><![CDATA[Save & verify]]></string>
+    <string name="changing_text">*Changing the contact number would require you to reverify your identity</string>
+    <string name="name_text">Name</string>
+    <string name="email_text">Email</string>
+    <string name="change_email_text">*Changing the email would require you to reverify your identity.</string>
+    <string name="max_name_test">50</string>
+    <string name="sample_text">12/12/15</string>
+    <string name="welcome_to_qamp">Welcome to Qamp</string>
+    <string name="qamp_username">Qamp Username</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="type_group_name">Type Group name</string>
+    <string name="max_group_name">123</string>
+    <string name="done_text">Done</string>
+    <string name="discover_text">Discover</string>
+    <string name="feed_text">Feed</string>
+    <string name="NoGroupChatText">No Group Chat</string>
+    <string name="NO_group_text">You didn\'t made any conversation yet, please select username.</string>
+    <string name="create_group">Create Group</string>
+    <string name="Show_older_messages">show older messages</string>
+    <string name="Message_text">Type your message...</string>
+    <string name="Delete_text">Delete</string>
+    <string name="Remove_picture_text">Remove Picture</string>
+    <string name="Gallery_Text">Gallery</string>
+    <string name="Camera_Text">Camera</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="type_status_text">Type your profile status here</string>
+    <string name="email_address">Email Address</string>
+    <string name="profile_pictures">Profile Pictures</string>
+    <string name="Media_Text">Media</string>
+    <string name="Max_Media_Text">10</string>
+    <string name="EtoEEncryption">End-To-End Encryption</string>
+    <string name="blocking">Blocking</string>
+    <string name="Group_Messages">Group Messages</string>
+    <string name="calls">Calls</string>
+    <string name="video_calls">Video Calls</string>
+    <string name="profile_view">Profile View</string>
+    <string name="custom_notifications">Custom Notifications</string>
+    <string name="favorite_messages">Favorite Messages</string>
+    <string name="status_and_phone">Status and Phone</string>
+    <string name="hi_today_is_nice_day">Hi today is nice day</string>
+    <string name="Example_Time">10 hours ago</string>
+    <string name="Mobile">Mobile</string>
+    <string name="group_members">Group Members</string>
+    <string name="_25">25</string>
+    <string name="joined_text">joined</string>
+    <string name="Edit_Group_Destails">Edit Group Details</string>
+    <string name="add_group_members">Add Group members</string>
+    <string name="exit_group">Exit Group</string>
+    <string name="Sample_Time">11:15</string>
+    <string name="this_is_title">This is title</string>
+    <string name="what_u00a0_u00a0_u00a0_u00a0_u00a0_u00a0_u00a0_u00a0_u00a0_u00a0_u00a0_u00a0_u00a0_u00a0_u00a0_u00a0_u00a0"><![CDATA[what                  ]]></string>
+    <string name="Sample_Name">James Bond</string>
+    <string name="GroupAdmin">Group admin</string>
+    <string name="Admin">Admin</string>
+    <string name="SampleMsg">longer message is longer mskr iy moter longer message to make it haappen</string>
+    <string name="new_chat">New Chat</string>
+    <string name="change_app_lang">Change Application Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="Default">Default</string>
+    <string name="English">English</string>
+    <string name="Hindi">Hindi</string>
+    <string name="Urdu">Urdu</string>
+    <string name="Punjabi">Punjabi</string>
+    <string name="Gujarati">Gujarati</string>
+    <string name="You_text">You</string>
+    <string name="my_channel_text">MY CHANNELS</string>
+    <string name="not_have_chat">You do not have any messages</string>
+    <string name="start_your_conversation">Start Your Conversation</string>
+    <string name="search_by_name_contact_number">Search by name, contact number</string>
+    <string name="create_new_group">Create New Group</string>
+    <string name="create_a_group">Create a Group</string>
+    <string name="add_member_text">Add group members from the next screen.</string>
+    <string name="current_language">Current Language -</string>
+    <string name="search_text">Search by name, contact, channel etc.</string>
+    <string name="no_result_found">No Result Found</string>
+    <string name="no_contacts_found">You do not have any contacts</string>
+    <string name="shareAppText">Now create your own community with Qamp App</string>
+    <string name="exitWarning">Press back again to exit</string>
+    <string name="delete_group">Delete Group</string>
+    <string name="report_user">Report User</string>
+    <string name="block">Block</string>
+    <string name="spamming">Spamming</string>
+    <string name="irrelavant_messages">Irrelavant messages</string>
+    <string name="skip">Skip Intro</string>
+    <string name="next_text">Next</string>
+    <string name="group_valid_text">Group name should be at least 2 characters</string>
+    <string name="Group_Modify_text">Modify Group details</string>
+    <string name="lastseen">Last Seen</string>
+    <string name="few_months">a few moments ago</string>
+    <string name="minutes_ago">minutes ago</string>
+    <string name="hour_ago">an hour ago</string>
+    <string name="Group_Admin_text">Group Admin</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="last_seen">Last seen</string>
+    <string name="daysago">" days ago"</string>
+    <string name="wrong_otp_kindly_re_enter_the_otp">Wrong OTP, Kindly re-enter the OTP</string>
+    <string name="msgIsDeleted">This message was deleted</string>
+    <string name="pleaseSelect">Please select India in country</string>
+    <string name="updated_successfully">Updated Successfully</string>
+    <string name="ok_text">OK</string>
+    <string name="reply_text">Reply</string>
+    <string name="fav_text">Star</string>
+    <string name="resend_text">Resend</string>
+    <string name="delete">Delete</string>
+    <string name="copy_text">Copy</string>
+    <string name="shared_files">Shared Files</string>
+    <string name="add_channel">Add Channel</string>
+    <string name="create_qamp_room">Create a Qamp Room</string>
+    <string name="new_group">New Group</string>
+    <string name="start_conversation">Start Conversation</string>
+    <string name="enter_group_name">Enter Group Name</string>
+    <string name="enter_group_desc">Enter Group Description</string>
+    <string name="privacy_settings">Privacy Settings</string>
+    <string name="group_interaction_text">Group Interaction Settings</string>
+    <string name="online_text">Online</string>
+    <string name="typing_text">Typing</string>
+    <string name="no_network_text">No Network</string>
+    <string name="delete_messages">Delete Messages?</string>
+    <string name="delete_for_everyone_text">Delete For Everyone</string>
+    <string name="delete_for_me">Delete For Me</string>
+    <string name="Create_group_text">Create Group</string>
+    <string name="all_users">All Users</string>
+    <string name="members_text">Members</string>
+    <string name="info_text_des">Info : Few words to explain what this group represents.....</string>
+    <string name="info_text">Info: Represent Your Group Identity....</string>
+    <string name="select_group_members">Select group members</string>
+    <string name="Message_hint">Type your message...</string>
+    <string name="not_having_messages">You do not have any messages. Click on the message button above to start a conversation</string>
+    <string name="gallery_text">Gallery</string>
+    <string name="video_text">Videos</string>
+    <string name="location_text">Location</string>
+    <string name="document_text">Documents</string>
+    <string name="chat_delete_confirmation">Do you really want to delete this chat?,it cannot be recovered</string>
+    <string name="delete_group_confirmation">Do you really want to delete this Group?,it cannot be recovered</string>
+    <string name="leave_group_confirmation">Do you really want to leave this group?,it cannot be recovered</string>
+    <string name="invite_only">Invite</string>
+    <string name="today_text">Today</string>
+    <string name="deletedMessageTitle">This message was deleted</string>
+    <string name="create_community">Create a Local Business</string>
+    <string name="community_name_text_description">What do you wish you call your Local Business?</string>
+    <string name="Channel_title">Business Name</string>
+    <string name="Channel_Description">Description</string>
+    <string name="EmptychannelNameandDescription">Channel Name , Channel Discription or Channel Type can\'t be empty</string>
+    <string name="business_type">Search Business Type</string>
+    <string name="whereLocatedText">Where are you located?</string>
+    <string name="pickedLocationText">We have picked your current location by default. You can also search for another location</string>
+    <string name="part_of_community_text">How should customers interact with your business?</string>
+    <string name="share_invite_text">Share Invite</string>
+    <string name="notification_center">Notification Center</string>
+    <string name="edit_details">Edit Details</string>
+    <string name="channel_type">Channel Type</string>
+    <string name="community_location">Location</string>
+    <string name="search_location">Search Location</string>
+    <string name="create_and_promote_your_business_shop_organisation_profile"><![CDATA[Create & promote your business/shop/organisation profile]]></string>
+    <string name="agree_continue_text"><![CDATA[Agree & Continue]]></string>
+    <string name="terms_condition_text"><![CDATA[Tap "Agree & Continue" to accept the]]></string>
+    <string name="terms_condition_qamp"><![CDATA[Qamp]]></string>
+    <string name="terms_condition_privacy"><![CDATA[Terms of Service & Privacy Policies]]></string>
+    <string name="enter_contact_number_text">Enter contact number</string>
+    <string name="need_help">Need Help?</string>
+    <string name="call_us">Call Us</string>
+    <string name="email_us">Email Us</string>
+    <string name="success_string">SUCCESS</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+</resources>

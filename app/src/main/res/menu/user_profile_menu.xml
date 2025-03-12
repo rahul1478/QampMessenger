@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  *  on 20/05/23, 3:30 AM
+  ~  * Copyright (c) 2023 . All rights reserved.
+  ~  * Last modified 05/05/23, 3:15 PM
+  ~  */
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_night"
+        android:title="Report User"
+        app:showAsAction="never">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/menu_user_block"
+                    android:title="Block" />
+                <item
+                    android:id="@+id/menu_user_spam"
+                    android:title="Spamming" />
+                <item
+                    android:id="@+id/menu_user_irrelavant"
+                    android:title="Irrelavant messages" />
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

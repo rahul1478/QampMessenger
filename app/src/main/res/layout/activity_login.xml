@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/secondActivityLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/splash"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/backBtn"
+        android:visibility="gone"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/ripple_effect"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ico_back" />
+
+    <TextView
+        android:id="@+id/phoneNumberTextGiven"
+        style="@style/medium_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-16dp"
+        android:gravity="center"
+        android:text="+91-0987654321"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="@+id/qamp_welcome_text"
+        app:layout_constraintTop_toBottomOf="@+id/qamp_welcome_text" />
+
+    <ImageView
+        android:id="@+id/qamp_welcome_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="40dp"
+        android:src="@drawable/welcom_to_qamp_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/login_layout"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/four_rounded_corner_btn"
+        android:paddingLeft="24dp"
+        android:paddingTop="32dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qamp_welcome_text">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.28"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/medium_text_style"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="16dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="+91" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:src="@drawable/ico_down_arrow"
+                        app:tint="@color/text_color_subtitle" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/buttonDisableText" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75">
+
+                    <EditText
+                        style="@style/edit_Text_Style"
+                        android:id="@+id/phoneNumberText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/no_underline_edittext"
+                        android:hint="@string/enter_contact_number_text"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="08dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+            <com.qamp.app.CustomClasses.ForegroundLinearLayout
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimaryLight"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nextButtonText"
+                    style="@style/disable_btn_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/next_text" />
+
+            </com.qamp.app.CustomClasses.ForegroundLinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/otp_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/four_rounded_corner_btn"
+        android:paddingLeft="24dp"
+        android:paddingTop="32dp"
+        android:paddingRight="24dp"
+        android:paddingBottom="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qamp_welcome_text">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/otp_layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/otp_field_corners"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/otpET1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/background_tint14"
+                    android:cursorVisible="false"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:hint="-"
+
+                    android:inputType="number"
+                    android:lineHeight="48sp"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_new"
+                    android:textSize="40sp"
+                    android:nextFocusForward="@+id/otpET2"
+                    android:nextFocusDown="@+id/otpET2"
+                    android:nextFocusLeft="@+id/otpET4"
+                    android:nextFocusUp="@+id/otpET4"
+                    android:imeOptions="actionNext"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/otp_layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/otp_field_corners"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/otpET2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/background_tint14"
+                    android:cursorVisible="false"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+
+                    android:hint="-"
+                    android:inputType="number"
+                    android:lineHeight="49sp"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_new"
+                    android:textSize="40sp"
+                    android:nextFocusForward="@+id/otpET3"
+                    android:nextFocusLeft="@+id/otpET1"
+                    android:nextFocusUp="@+id/otpET1"
+                    android:nextFocusDown="@+id/otpET3"
+                    android:imeOptions="actionNext"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/otp_layout3"
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/otp_field_corners"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/otpET3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/background_tint14"
+                    android:cursorVisible="false"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:hint="-"
+
+                    android:inputType="number"
+                    android:lineHeight="49sp"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_new"
+                    android:textSize="40sp"
+                    android:nextFocusForward="@+id/otpET4"
+                    android:nextFocusLeft="@+id/otpET2"
+                    android:nextFocusUp="@+id/otpET2"
+                    android:nextFocusDown="@+id/otpET4"
+                    android:imeOptions="actionNext"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/otp_layout4"
+                android:layout_width="wrap_content"
+                android:layout_height="84dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:background="@drawable/otp_field_corners"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/otpET4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/background_tint14"
+                    android:cursorVisible="false"
+                    android:fontFamily="@font/inter_regular"
+                    android:gravity="center"
+                    android:hint="-"
+                    android:inputType="number"
+                    android:lineHeight="49sp"
+
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color_new"
+                    android:textSize="40sp"
+                    android:nextFocusLeft="@+id/otpET3"
+                    android:nextFocusUp="@+id/otpET3"
+                    android:nextFocusDown="@+id/otpET1"
+                    android:imeOptions="actionNext"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <TextView
+                style="@style/medium_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center|left"
+                android:text="@string/otpnotrecieved"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/resendOTP"
+                style="@style/medium_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="end"
+                android:text="@string/resend_otp_button"
+                android:textAllCaps="false"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/otp_verified"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/otp_verified_toast_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"/>
+
+        <TextView
+            android:id="@+id/resendOTP2"
+            style="@style/medium_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="end"
+            android:text="@string/resend_otp_button"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/otp_verified"
+            app:layout_constraintStart_toStartOf="@+id/otp_verified"
+            app:layout_constraintTop_toBottomOf="@+id/otp_verified" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/need_help_text"
+        style="@style/footer_text_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/need_help"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/email_us_text"
+        style="@style/footer_text_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:drawableStart="@drawable/ico_email"
+        android:drawablePadding="08dp"
+        android:drawableTint="@color/white"
+        android:gravity="center"
+        android:text="@string/email_us"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/call_us_text" />
+
+    <TextView
+        android:id="@+id/call_us_text"
+        style="@style/footer_text_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:drawableStart="@drawable/ico_phone"
+        android:text="@string/call_us"
+        android:drawableTint="@color/white"
+        android:drawablePadding="08dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

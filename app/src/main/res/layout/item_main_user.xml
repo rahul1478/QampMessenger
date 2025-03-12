@@ -1,0 +1,154 @@
+<!--
+  ~ /**
+  ~  *  on 20/05/23, 3:30 AM
+  ~  * Copyright (c) 2023 . All rights reserved.
+  ~  * Last modified 05/05/23, 3:15 PM
+  ~  */
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mes_rv_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <com.qamp.app.CustomClasses.OnlineStatusImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:padding="4dp"
+            android:scaleType="fitXY"
+            app:shapeAppearance="@style/rounded_image"
+            app:shapeAppearanceOverlay="@style/rounded_image"
+            android:src="@drawable/person"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/select_check"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:visibility="gone"
+            android:src="@drawable/select_ico"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewProfile"
+            app:layout_constraintEnd_toEndOf="@id/imageViewProfile"
+            />
+
+        <TextView
+            android:id="@+id/mes_rv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/imageViewProfile"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toLeftOf="@+id/mes_rv_date"
+            android:layout_toRightOf="@+id/imageViewProfile"
+            android:fontFamily="@font/inter_medium"
+            android:text="Mesibo Username"
+            android:textColor="#505050"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ico_pin"
+            app:layout_constraintEnd_toStartOf="@+id/mes_rv_date"
+            app:layout_constraintTop_toTopOf="@+id/mes_rv_date"
+            android:layout_marginEnd="10dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/mes_rv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/mes_rv_name"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Yesterday"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#828282"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/mes_cont_status"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="top|left"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_done_black_18dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="@+id/mes_rv_name"
+            app:layout_constraintTop_toBottomOf="@+id/mes_rv_name" />
+
+        <TextView
+            android:id="@+id/mes_cont_post_or_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="3"
+            android:maxLines="1"
+            android:text="This is a  This is a  This is"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#868686"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@+id/card_count"
+            app:layout_constraintStart_toEndOf="@+id/mes_cont_status"
+            app:layout_constraintTop_toBottomOf="@+id/mes_rv_name" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_count"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/buttonActive"
+            app:cardCornerRadius="4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mes_rv_date">
+
+            <TextView
+                android:id="@+id/unread_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:fontFamily="@font/inter_medium"
+                android:gravity="center"
+                android:text="99"
+                android:maxLines="1"
+                android:textSize="12sp"
+                android:textColor="@color/buttonActiveText"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

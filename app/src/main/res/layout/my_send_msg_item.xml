@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/rel_parent"
+    android:layout_height="wrap_content"
+    android:gravity="end|right"
+    android:orientation="horizontal"
+    android:layout_marginLeft="@dimen/spacing_xlarge"
+    android:layout_marginStart="@dimen/spacing_xlarge"
+    android:paddingBottom="1dp"
+    android:paddingLeft="@dimen/spacing_middle"
+    android:paddingRight="@dimen/spacing_middle"
+    android:paddingTop="1dp">
+
+    <LinearLayout
+        android:id="@+id/lyt_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end|right"
+        android:orientation="horizontal"
+        >
+
+
+
+    <ImageView
+        android:id="@+id/forward"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:layout_width="20dp"
+        android:src="@drawable/ico_forward"
+        android:layout_height="20dp"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/documentMsgLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_small"
+        android:minHeight="32dp"
+        android:visibility="visible"
+        app:cardUseCompatPadding="false">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="180dp"
+            android:background="@drawable/me_chat_bubble"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/spacing_medium"
+            android:paddingLeft="@dimen/spacing_medium"
+            android:paddingRight="@dimen/spacing_medium"
+            android:paddingTop="@dimen/spacing_medium">
+
+
+           <LinearLayout
+               android:id="@+id/reply_layout"
+               android:layout_width="280dp"
+               android:layout_height="wrap_content"
+               android:background="@drawable/qamp_outline"
+               android:padding="5dp"
+               android:visibility="gone"
+               >
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="16sp"
+                   android:layout_marginTop="16sp"
+                   android:layout_marginRight="16sp"
+                   android:layout_marginBottom="16sp"
+                   android:animateLayoutChanges="true"
+                   android:background="#20000000"
+                   android:minHeight="10dp"
+                   android:paddingBottom="0dp"
+                   android:visibility="visible">
+
+
+                   <TextView
+                       android:id="@+id/reply_name"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginTop="1dp"
+                       android:text="James Bond"
+                       android:textColor="@color/md_green_900"
+                       android:textSize="16sp" />
+
+                   <com.mesibo.emojiview.EmojiconTextView
+                       android:id="@+id/reply_text"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@+id/reply_name"
+                       android:layout_gravity="bottom"
+                       android:layout_marginLeft="10dp"
+                       android:layout_marginRight="4dp"
+                       android:layout_toLeftOf="@+id/reply_image"
+                       android:background="@null"
+                       android:maxLines="3"
+                       android:paddingTop="0dp"
+                       android:paddingBottom="6dp"
+                       android:text="Hi this is the reply chat message so find it check 1234  test message string can you tell me what is this testing nothing but waste of time"
+                       android:textColorHint="#c4c0bd"
+                       android:textSize="14sp" />
+
+                   <ImageView
+                       android:id="@+id/reply_image"
+                       android:layout_width="60dp"
+                       android:layout_height="0dp"
+                       android:layout_alignBottom="@+id/reply_text"
+                       android:layout_alignParentTop="true"
+                       android:layout_alignParentRight="true"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/default_user_image"
+                       android:visibility="visible" />
+
+
+                   <ImageView
+                       android:id="@+id/reply_cancel"
+                       android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:layout_alignParentTop="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginTop="4dp"
+                       android:layout_marginRight="4dp"
+                       android:src="@drawable/ic_cancel_black_24dp"
+                       app:tint="@color/md_grey_500"
+                       android:visibility="gone" />
+
+                   <View
+                       android:layout_width="3dp"
+                       android:layout_height="wrap_content"
+                       android:layout_alignBottom="@+id/reply_text"
+                       android:layout_alignParentStart="true"
+                       android:layout_alignParentLeft="true"
+                       android:layout_alignParentTop="true"
+                       android:background="@color/md_green_900" />
+
+               </RelativeLayout>
+
+           </LinearLayout>
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapView"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="290dp"
+                android:layout_height="250dp"
+                android:visibility="gone"
+                android:layout_below="@id/toolbar" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/image_card"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:background="@color/colorPrimary"
+                app:cardCornerRadius="6dp">
+
+                <ImageView
+                    android:id="@+id/display_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/demo_girl" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/audio_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:id="@+id/play_btn"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center|start"
+                    android:layout_marginLeft="08dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/ico_play"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/audio_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="0:20"
+                    android:textColor="@color/buttonActiveText"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/play_btn"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ico_sound"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/audio_length"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/document_card"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center|start"
+                    android:layout_marginLeft="08dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/filepdf"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/document_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/inter_medium"
+                    android:gravity="center"
+                    android:text="Invitation Restaurant"
+                    android:textColor="@color/buttonActiveText"
+                    app:layout_constraintStart_toEndOf="@+id/imageView11" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:src="@drawable/ico_download"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/message_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_medium"
+                android:layout_marginRight="@dimen/spacing_medium"
+                android:text="Check the venue. I think the space would be enough for all 😊"
+                android:layout_marginTop="04dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="@android:color/black"
+                android:textStyle="normal"
+                android:fontFamily="@font/inter_medium"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|end"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="02:30 AM"
+                    android:textColor="@color/grey_40"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="@dimen/spacing_medium"
+                    android:layout_height="0dp" />
+
+                <ImageView
+                    android:id="@+id/mes_cont_status"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_done_black_18dp"
+                    android:visibility="visible"
+                />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/selected_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/lyt_parent"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:background="@color/overlaySelection"
+        android:visibility="gone" />
+
+</RelativeLayout>
