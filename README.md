@@ -36,7 +36,19 @@ Users can sync contacts, find friends who are on Mesibo, and communicate through
     - Delete group if needed.
 
 ## 📸 Screenshots
-<img src="ScreenShots/Screenshot_20250312_115324_Qamp.jpg" alt="App Screenshot" width="400" height="800">
+<img src="ScreenShots/Screenshot_20250312_115324_Qamp.jpg" alt="App Screenshot" width="400">
+<img src="ScreenShots/Screenshot_20250312_115413_Qamp.jpg" alt="App Screenshot" width="400">
+<img src="ScreenShots/Screenshot_20250312_121455_Qamp.jpg" alt="App Screenshot" width="400">
+<img src="ScreenShots/Screenshot_20250312_115537_Qamp.jpg" alt="App Screenshot" width="400">
+<img src="ScreenShots/Screenshot_20250312_115827_Qamp.jpg" alt="App Screenshot" width="400">
+<img src="ScreenShots/Screenshot_20250312_120020_Qamp.jpg" alt="App Screenshot" width="400">
+<img src="ScreenShots/Screenshot_20250312_120635_Qamp.jpg" alt="App Screenshot" width="400">
+<img src="ScreenShots/Screenshot_20250312_121409_Qamp.jpg" alt="App Screenshot" width="400">
+<img src="ScreenShots/Screenshot_20250312_120828_Qamp.jpg" alt="App Screenshot" width="400">
+<img src="ScreenShots/Screenshot_20250312_121507_Qamp.jpg" alt="App Screenshot" width="400">
+<img src="ScreenShots/Screenshot_20250312_121526_Qamp.jpg" alt="App Screenshot" width="400">
+<img src="ScreenShots/Screenshot_20250312_121558_Qamp.jpg" alt="App Screenshot" width="400">
+
 
 
 ## 🛠️ Tech Stack
