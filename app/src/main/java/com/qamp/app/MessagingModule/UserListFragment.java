@@ -626,12 +626,11 @@ public class UserListFragment extends Fragment implements Mesibo.MessageListener
     }
 
     public void Mesibo_onMessage(MesiboMessage msg) {
-        Log.e("alll msgss",msg.message);
         if (msg.isIncomingCall() || msg.isOutgoingCall() || msg.isEndToEndEncryptionStatus()) {
             Log.e("incoming msgss","11");
             updateUiIfLastMessage(msg);
         } else if (msg.groupid <= 0 || msg.groupProfile != null) {
-            Log.e("incoming msgss",msg.message);
+            Log.e("incoming msgss","22");
             addNewMessage(msg);
             updateUiIfLastMessage(msg);
         } else {

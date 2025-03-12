@@ -390,7 +390,6 @@ public class MessageAdapter extends SelectableAdapter<RecyclerView.ViewHolder> {
             String message = mData.getMessage();
             Bitmap image = mData.getImage();
 
-            Log.e("list of message",message);
 
             MesiboFile file = mData.getMesiboMessage().getFile();
 
