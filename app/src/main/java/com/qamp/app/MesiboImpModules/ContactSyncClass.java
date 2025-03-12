@@ -12,6 +12,7 @@ import android.graphics.drawable.Drawable;
 import android.provider.ContactsContract;
 import android.telephony.PhoneNumberUtils;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 
 import com.mesibo.api.Mesibo;
 import com.mesibo.api.MesiboProfile;
@@ -131,12 +132,22 @@ public class ContactSyncClass {
         return formattedNumber;
     }
     public static Bitmap drawableToBitmap(Drawable drawable) {
+        if (drawable == null) {
+            Log.e("ContactSyncClass", "drawableToBitmap received null Drawable!");
+            return null; // Avoid NullPointerException
+        }
+
         if (drawable instanceof BitmapDrawable) {
             return ((BitmapDrawable) drawable).getBitmap();
         }
 
         int width = drawable.getIntrinsicWidth();
         int height = drawable.getIntrinsicHeight();
+
+        if (width <= 0 || height <= 0) {
+            Log.e("ContactSyncClass", "Invalid Drawable dimensions: width=" + width + ", height=" + height);
+            return null; // Avoid creating an invalid bitmap
+        }
 
         Bitmap bitmap = Bitmap.createBitmap(width, height, Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
@@ -145,4 +156,5 @@ public class ContactSyncClass {
 
         return bitmap;
     }
+
 }
