@@ -36,7 +36,7 @@ Users can sync contacts, find friends who are on Mesibo, and communicate through
     - Delete group if needed.
 
 ## 📸 Screenshots
-<img src="ScreenShot/Screenshot_20250312_115324_Qamp.png" alt="App Screenshot" width="500">
+<img src="ScreenShots/Screenshot_20250312_115324_Qamp.jpg" alt="App Screenshot" width="500">
 
 
 ## 🛠️ Tech Stack
